@@ -15,3 +15,336 @@ body {
 :root {
     --primary-color: #2AC9BF;
 }
+ 
+/* Common */
+.main-content {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 20px 40px;
+    background: var(--primary-color);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.69;
+    color: #9DA6A5;
+}
+
+.heading {
+    font-weight: 700;
+    color: #0D1111;
+}
+
+.heading.lv1 {
+    font-size: 6.2rem;
+    line-height: 1.16;
+}
+
+.heading.lv2 {
+    font-size: 4.2rem;
+    line-height: 1.33;
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin-top: 52px;
+    background: #fff;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav .list {
+    display: flex;
+    margin-left: 60px;
+}
+
+header .nav a:hover,
+header .nav .item.active a {
+    font-weight: 600;
+    color: #2F3A3B;
+}
+
+header .nav a {
+    display: block;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #2F3A3B;
+    padding: 20px;
+}
+
+.header .action {
+    display: flex;
+    align-items: center;
+}
+
+.header .action .btn-action {
+    background: #fff;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    margin-left: 24px;
+    padding: 12px 24px;
+    font-size: 1.6rem;
+    color: #1EBFC1;;
+}
+
+.header .action .btn-action:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.header .action .sign-in {
+    font-weight: 400;
+    color: #494949;
+}
+
+/* Flat form */
+.flatform {
+    margin-top: 48px;
+}
+
+.flatform .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flatform .content-left .title {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #767E7E;
+    margin-bottom: 18px;
+}
+
+.flatform .content-left .flatform-desc {
+    width: 374px;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #9DA6A5;
+    margin-top: 18px;
+}
+
+.flatform .content-left .action {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+    gap: 0 50px;
+}
+
+.flatform .content-left .btn-play {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    cursor: pointer;
+}
+
+.flatform .content-right .img {
+    position: relative;
+    width: 576px;
+    height: 631px;
+}
+
+.flatform .content-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Courses */
+.flatform .courses {
+    min-width: 157px;
+    position: absolute;
+    top: 25.8%;
+    left: -7%;
+}
+
+.flatform .courses .content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 17px 25px 18px;
+    background: #FEFEFD;
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+}
+
+.flatform .courses .content::after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 4px;
+    left: 29px;
+    bottom: 25px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.flatform .courses .icon {
+    position: relative;
+    width: 36px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.flatform .courses .quantity {
+    width: 55px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0D1111;
+}
+
+/* Schedules */
+.flatform .content-right .schedules {
+    min-width: 124px;
+    position: absolute;
+    bottom: 8%;
+    left: -11.3%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+
+.flatform .schedules .content {
+    padding: 16px 25px 23px;
+}
+
+.flatform .schedules .title {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0D1111;
+    text-align: center;
+}
+
+.flatform .schedules .range {
+    display: block;
+    background: #EDF1F5;
+    border-radius: 3px;
+    width: 74px;
+    height: 6px;
+    margin: 0 auto;
+}
+
+.flatform .schedules .range:nth-child(1) {
+    position: relative;
+    margin-top: 16px;
+}
+
+.flatform .schedules .range:nth-child(1)::after,
+.flatform .schedules .range:nth-child(2)::after,
+.flatform .schedules .range:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: #FB9899;
+    border-radius: 3px;
+}
+
+.flatform .schedules .range:nth-child(1)::after {
+    width: 52.5%;
+}
+
+.flatform .schedules .range:nth-child(2) {
+    position: relative;
+    margin-top: 12px;
+}
+
+.flatform .schedules .range:nth-child(2)::after {
+    width: 69%;
+}
+
+.flatform .schedules .range:nth-child(3) {
+    position: relative;
+    margin-top: 10px;
+}
+
+.flatform .schedules .range:nth-child(3)::after {
+    width: 44.6%;
+}
+
+.flatform .schedules .range:last-child {
+    margin-top: 16px;
+    width: 26px;
+}
+
+/* Active */
+.flatform .content-right .active {
+    position: absolute;
+    bottom: 7%;
+    right: 8%;
+    min-width: 207px;
+    background: #FEFEFD;
+    box-shadow: 0px 12px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+
+.flatform .active .content {
+    padding: 17px 35px;
+}
+
+.flatform .active .title {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0D1111;
+}
+
+.flatform .active .students {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.flatform .students .avatar {
+    --line-height: 33px;
+    width: var(--line-height);
+    height: var(--line-height);
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: var(--line-height);
+    text-align: center;
+    object-fit: cover;
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.flatform .students .avatar:not(:first-child) {
+    margin-left: -7px;
+}
