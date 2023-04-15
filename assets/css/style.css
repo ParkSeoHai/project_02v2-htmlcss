@@ -66,6 +66,10 @@ a {
     line-height: 1.33;
 }
 
+.heading.lv3 {
+    font-size: 2.2rem;
+}
+
 .heading.lv4 {
     font-weight: 600;
     font-size: 2rem;
@@ -76,6 +80,17 @@ a {
     font-size: 1.2rem;
     color: #767E7E;
     margin-bottom: 18px;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    -webkit-line-clamp: var(--line-clamp, 2);
 }
 
 /* Header */
@@ -397,4 +412,112 @@ header .nav a {
 
 .features .features-body .features-title {
     margin: 26px 0 16px;
+}
+
+/* Courses */
+.courses {
+    padding-top: 130px;
+}
+
+.courses .courses-header .courses-title {
+    letter-spacing: 4px;
+}
+
+.courses .courses-header .extend {
+    margin: 19px 0 79px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses .extend .courses-desc {
+    max-width: 525px;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #767E7E;
+}
+
+.courses .extend .link {
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-decoration-line: underline;
+    color: var(--primary-color);
+}
+
+.courses .courses-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses .courses-body .column {
+    position: relative;
+    width: 30.7%;
+    height: 393px;
+}
+
+.courses .column a {
+    height: 100%;
+    color:#0D1111;
+}
+
+.courses .column .img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.courses .column .content {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    width: 90.5%;
+    top: 80%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.courses .column .info {
+    padding: 18px 25px 29px 25px;
+}
+
+.courses .info .price {
+    margin: 16px 0 6px;
+}
+
+.courses .info .price span {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #0D1111;
+}
+
+.courses .info .courses-desc {
+    font-size: 1.4rem;
+}
+
+.courses .info .parameters {
+    display: flex;
+    align-items: center;
+    margin: 18px 0 0 16px;
+}
+
+.courses .parameters .courses-desc {
+    position: relative;
+    margin-right: 26px;
+}
+
+.courses .parameters .courses-desc::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 50%;
+    left: -16px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    transform: translateY(-50%);
 }
