@@ -10,6 +10,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
 }
 
 :root {
@@ -34,7 +35,6 @@ a {
     border-radius: 14px;
     font-weight: 600;
     font-size: 1.8rem;
-    line-height: 1.5;
     text-align: center;
     color: #FFFFFF;
     cursor: pointer;
@@ -64,6 +64,18 @@ a {
 .heading.lv2 {
     font-size: 4.2rem;
     line-height: 1.33;
+}
+
+.heading.lv4 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #767E7E;
+    margin-bottom: 18px;
 }
 
 /* Header */
@@ -96,7 +108,6 @@ header .nav a {
     display: block;
     font-weight: 400;
     font-size: 1.6rem;
-    line-height: 1.5;
     color: #2F3A3B;
     padding: 20px;
 }
@@ -128,7 +139,7 @@ header .nav a {
 
 /* Flat form */
 .flatform {
-    margin-top: 48px;
+    margin: 48px 0 80px;
 }
 
 .flatform .body {
@@ -137,11 +148,9 @@ header .nav a {
     justify-content: space-between;
 }
 
-.flatform .content-left .title {
+.flatform .content-left .flatform-title {
     font-weight: 400;
     font-size: 1.4rem;
-    line-height: 1.5;
-    color: #767E7E;
     margin-bottom: 18px;
 }
 
@@ -225,7 +234,6 @@ header .nav a {
     width: 55px;
     font-weight: 500;
     font-size: 1rem;
-    line-height: 1.5;
     color: #0D1111;
 }
 
@@ -247,7 +255,6 @@ header .nav a {
 .flatform .schedules .title {
     font-weight: 500;
     font-size: 1rem;
-    line-height: 1.5;
     color: #0D1111;
     text-align: center;
 }
@@ -321,7 +328,6 @@ header .nav a {
 .flatform .active .title {
     font-weight: 500;
     font-size: 1rem;
-    line-height: 1.5;
     color: #0D1111;
 }
 
@@ -347,4 +353,48 @@ header .nav a {
 
 .flatform .students .avatar:not(:first-child) {
     margin-left: -7px;
+}
+
+/* Features */
+.features {
+    padding-top: 130px;
+}
+
+.features .features-header {
+    max-width: 50.5%;
+}
+
+.features .features-header .features-desc {
+    font-size: 1.8rem;
+    color: #767E7E;
+    margin: 18px 0 80px;
+}
+
+.features .features-header .features-title {
+    letter-spacing: 4px;
+}
+
+.features .features-body {
+    display: flex;
+    align-items: center;
+    gap: 0 200px
+}
+
+.features .features-body .column {
+    width: 19%;
+}
+
+.features .features-body .column:nth-child(2) {
+    margin-left: -50px;
+}
+
+.features .features-body .img {
+    width: 102px;
+    height: 106px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.features .features-body .features-title {
+    margin: 26px 0 16px;
 }
