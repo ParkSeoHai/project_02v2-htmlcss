@@ -210,7 +210,7 @@ header .nav a {
 .flatform .courses {
     min-width: 157px;
     position: absolute;
-    top: 25.8%;
+    top: 4.8%;
     left: -7%;
 }
 
@@ -461,9 +461,14 @@ header .nav a {
 .courses .column .img {
     width: 100%;
     height: 100%;
-    opacity: 0.8;
+    opacity: 0.3;
     border-radius: 8px;
     object-fit: cover;
+    transition: opacity 0.2s linear;
+}
+
+.courses .column .img:hover {
+    opacity: 1;
 }
 
 .courses .column .content {
@@ -546,5 +551,127 @@ header .nav a {
 .countdown .column .countdown-desc {
     font-size: 1.8rem;
     color: #767E7E;
+}
+
+/* Testimonial */
+.testimonial {
+    margin-top: 134px;
+    padding-top: 130px;
+}
+
+.testimonial .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonial .column:first-child {
+    width: 35.8%;
+}
+
+.testimonial .column .text-content {
+    font-weight: 400;
+    margin: 27px 0 33px;
+    font-size: 3.2rem;
+    color: #5D6564;
+}
+
+.testimonial .column .author {
+    position: relative;
+    font-weight: 400;
+    color: #767E7E;
+}
+
+.testimonial .column .author::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #070707;
+}
+
+.testimonial .author .name {
+    margin-left: 13px;
+    font-weight: 500;
+    color: #070707;
+}
+
+.testimonial .column .nav {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    margin-top: 52px;
+}
+
+.testimonial .nav .nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.testimonial .column:last-child {
+    width: 58%;
+}
+
+.testimonial .content {
+    position: relative;
+    padding: 107px 171px 139px 273px;
+}
+
+.testimonial .content .img {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--primary-color);
+}
+
+.testimonial .content .img-main {
+    width: 235px;
+    height: 235px;
+}
+
+.testimonial .content .img-sub1 {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    right: 0;
+    top: 4%;
+}
+
+.testimonial .content .img-sub2 {
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    top: 0;
+    left: 21%;
+}
+
+.testimonial .content .img-sub3,
+.testimonial .content .img-sub4,
+.testimonial .content .img-sub5 {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+}
+
+.testimonial .content .img-sub3 {
+    left: 0;
+    bottom: 30%;
+}
+
+.testimonial .content .img-sub4 {
+    bottom: 0;
+    left: 31%;
+}
+
+.testimonial .content .img-sub5 {
+    bottom: 6%;
+    right: 4.7%;
 }
 
