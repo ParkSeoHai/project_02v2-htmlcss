@@ -675,3 +675,26 @@ header .nav a {
     right: 4.7%;
 }
 
+/* CTA */
+.cta {
+    margin-top: 130px;
+    background-color: #DEF6F5;
+}
+
+.cta .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 76px 154px 88px 0;
+}
+
+.cta .body .cta-heading {
+    color: #070707;
+    margin-bottom: 18px;
+}
+
+.cta .body .cta-desc {
+    color: #767E7E;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
