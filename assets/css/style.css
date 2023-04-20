@@ -74,6 +74,12 @@ a {
     font-size: 2rem;
 }
 
+.heading.lv5 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #2E2E2E;
+}
+
 .title {
     font-weight: 700;
     font-size: 1.2rem;
@@ -697,4 +703,44 @@ header .nav a {
     color: #767E7E;
     font-size: 1.8rem;
     line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+
+}
+
+.footer .content {
+    padding: 131px 0 50px;
+}
+
+.footer .content .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .body ul {
+    margin: 25px 0 80px;
+}
+
+.footer .body a {
+    display: inline-block;
+    font-weight: 400;
+    margin-top: 18px;
+    font-size: 1.6rem;
+    color: #535353;
+}
+
+.footer .body li:hover {
+    opacity: 0.8;
+}
+
+.footer .body .social-icon {
+    margin-right: 10px;
+}
+
+.footer .content .footer-desc {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #B0B5B4;
 }
