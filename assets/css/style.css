@@ -727,7 +727,7 @@ header .nav a {
     margin: 25px 0 80px;
 }
 
-.footer .body a {
+.footer .body li a {
     display: inline-block;
     font-weight: 400;
     margin-top: 18px;
