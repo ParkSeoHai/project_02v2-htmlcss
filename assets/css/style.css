@@ -193,8 +193,7 @@ header .nav a {
     width: 62px;
     height: 62px;
     border-radius: 50%;
-    border: 1px solid var(--primary-color);
-    box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.1);
     background: #fff;
     cursor: pointer;
     background: url(../icons/play-icon.svg) center center no-repeat;
@@ -202,6 +201,7 @@ header .nav a {
 
 .flatform .content-left .btn-play:hover {
     opacity: 0.8;
+    border: 1px solid var(--primary-color);
 }
 
 .flatform .content-right .img {
